@@ -1,0 +1,99 @@
+body{
+
+    background-image:url(img/backgnd.jpg);
+    
+}
+.container{
+margin-top: 30px;
+color: rgb(218, 212, 212);
+padding: 5px;
+text-align: center;
+
+width: 50vw;
+height: 50vh;
+background-color: rgba(0, 0, 0, 0.822);
+border-radius: 25px;
+}
+.welcome{
+    font-size: 50px;
+}
+
+.join{
+    font-size: 30px;
+    background-color:rgba(218, 212, 212, 0.822);
+    color: rgb(9, 42, 114);
+    border: solid 1px rgb(9, 42, 114);
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.sign-in{
+   font-size: 30px;
+    background-color:  rgb(9, 42, 114);
+    border-radius: 20px;
+    color: rgba(218, 212, 212, 0.822);
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-bottom: 20px
+}
+.sign-in:hover{
+    
+    box-shadow: rgba(218, 212, 212, 0.822) 2px 7px 5px  ;
+}
+.join:hover{
+    box-shadow: rgba(9, 42, 114, 0.514) 2px 7px 5px;
+    color: rgb(255, 255, 255);
+}
+
+.upwards{
+    display:grid;
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.514);
+    
+    box-shadow: rgba(1, 1, 24, 0.822) 2px 7px 5px;
+}
+.close{
+    color: white;
+}
+.close:hover{
+    color: red;
+    font-weight: bolder;
+}
+
+.upwards input {
+    color: black;
+    font-size: 20px;
+}
+.inwards input{
+    color: black;
+    font-size: 20px;
+}
+
+.modal-content{
+    background-color:rgba(9, 42, 114, 0.514);
+    padding: 10px;
+}
+
+#submit{
+    background-color: rgba(0, 0, 0, 0.836);
+    color: white;
+}
+#modal2{
+    display: flexbox;
+    background-color: darkgray;
+    box-shadow: black 2px 4px 4px 2px;
+
+}
+.modal-body{
+    display: flex;
+    flex-direction: column;
+    float: center;
+}
+.password{
+    font-weight: bold;
+}
+
+
+
+
+

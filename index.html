@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!--Create a profile that highlights strengths-->
+        <title>Joshua Grigsby</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>    
+        <!--fontawesome cdn-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="styles.css">
+        <!--Script-->
+        
+       </head>
+
+
+       <body>
+
+<div class="container">
+ <h1 class="welcome">Welcome, go ahead and sign-up or sign-in!</h1>
+<!--Restructure Buttons to open Modal-->
+<button type="button" class="btn join" data-toggle="modal" data-target="#myModal">Sign Up</button>
+<button class="btn sign-in" id="sign-in" data-toggle="modal" data-target="#myModal2">Sign In</button>
+
+
+
+ <div id="myModal2" class="modal fade" role="form">
+    <div class="modal-form">
+
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Sign Back In!</h4>
+            </div>
+            <div class="modal-body">
+                
+                <form class="inwards">
+                    
+           <p class="password">Username: <input id="valuser" class="valuser"></p>
+
+            
+           <p class="password"> Password: <input id="valpass" class="valpass" type="password"></p>
+                         
+                <button type="button"  class="rsetpass"><a href="resetpass.html">Forgot Password</a></button>
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default pure-button pure-button-primary" data-dismiss="modal" id="submit" onclick="signIn()">Submit</button>
+                </div>
+        </div>
+    </div>
+ </div>
+
+
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialogue">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Join Our Network</h4>
+      </div>
+      <div class="modal-body">
+
+        <form class="upwards">
+
+            <label for="fname">First Name: </label>
+            <input id="fname" class="fname">
+
+            <label for="lname">Last Name: </label>
+            <input id="lname" class="lname">
+
+            <label for="bday">Birth Date: </label>
+            <input type="date" id="bday" class="bday">
+
+            <label for="email">Email: </label>
+            <input type="email"id="email" class="email">
+
+            <label for="cell">Phone Number: </label>
+            <input type="tel" id="cell" class="cell">
+
+            <label for="uname"> Create Username: </label>
+            <input id="uname" class="uname">
+            
+            <label for="password"> Password: </label>
+            <input type="password" id="password" required>
+
+            <label for="confirm_password"> Confirm Password: </label>
+            <input type="password" placeholder="Confirm Password" id="confirm_password" required>
+            
+    
+            
+        
+    
+
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default pure-button pure-button-primary" data-dismiss="modal" id="submit" onclick="submit()">Submit</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+       </body>
+       <script src="script.js"></script>
+</html>
